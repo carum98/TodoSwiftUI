@@ -1,20 +1,20 @@
 //
-//  ContentView.swift
-//  TodoSwiftUI-tvOS
+//  LoginView.swift
+//  TodoSwiftUI
 //
 //  Created by Carlos Eduardo Umaña Acevedo on 2/8/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     var body: some View {
-        LoginView()
+        LoginForm()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

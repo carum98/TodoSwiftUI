@@ -23,6 +23,26 @@
 		F7A326CC2A7A0E7A00060D9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A326CB2A7A0E7A00060D9D /* ContentView.swift */; };
 		F7A326CE2A7A0E7C00060D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A326CD2A7A0E7C00060D9D /* Assets.xcassets */; };
 		F7A326D22A7A0E7C00060D9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A326D12A7A0E7C00060D9D /* Preview Assets.xcassets */; };
+		F7BBE8FA2A7AE22C002FC15B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */; };
+		F7BBE8FB2A7AE22C002FC15B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */; };
+		F7BBE8FC2A7AE22C002FC15B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */; };
+		F7BBE8FD2A7AE22C002FC15B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */; };
+		F7BBE9032A7AE301002FC15B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9022A7AE301002FC15B /* LoginView.swift */; };
+		F7BBE9042A7AE301002FC15B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9022A7AE301002FC15B /* LoginView.swift */; };
+		F7BBE9052A7AE301002FC15B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9022A7AE301002FC15B /* LoginView.swift */; };
+		F7BBE9062A7AE301002FC15B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9022A7AE301002FC15B /* LoginView.swift */; };
+		F7BBE9092A7B17DA002FC15B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */; };
+		F7BBE90A2A7B17DA002FC15B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */; };
+		F7BBE90B2A7B17DA002FC15B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */; };
+		F7BBE90C2A7B17DA002FC15B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */; };
+		F7BBE90F2A7B1850002FC15B /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE90E2A7B1850002FC15B /* HttpService.swift */; };
+		F7BBE9102A7B1850002FC15B /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE90E2A7B1850002FC15B /* HttpService.swift */; };
+		F7BBE9112A7B1850002FC15B /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE90E2A7B1850002FC15B /* HttpService.swift */; };
+		F7BBE9122A7B1850002FC15B /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE90E2A7B1850002FC15B /* HttpService.swift */; };
+		F7BBE9152A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
+		F7BBE9162A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
+		F7BBE9172A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
+		F7BBE9182A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
 		F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
@@ -65,6 +85,11 @@
 		F7A326CD2A7A0E7C00060D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7A326D12A7A0E7C00060D9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7B0FC492A7ACADC00471DD5 /* TodoSwiftUI.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TodoSwiftUI.entitlements; sourceTree = "<group>"; };
+		F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		F7BBE9022A7AE301002FC15B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F7BBE90E2A7B1850002FC15B /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		F7E637752A7AD69A00E01438 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,9 +226,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F7BBE9012A7AE2EA002FC15B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7BBE9022A7AE301002FC15B /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7BBE9072A7B17A6002FC15B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F7BBE90D2A7B182E002FC15B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7BBE90E2A7B1850002FC15B /* HttpService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F7BBE9132A7B2CDC002FC15B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F7E637732A7AD40700E01438 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F7BBE9132A7B2CDC002FC15B /* Models */,
+				F7BBE90D2A7B182E002FC15B /* Services */,
+				F7BBE9072A7B17A6002FC15B /* ViewModels */,
+				F7BBE9012A7AE2EA002FC15B /* Views */,
 				F7E637742A7AD41A00E01438 /* Components */,
 			);
 			path = Shared;
@@ -213,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				F7E637752A7AD69A00E01438 /* HelloWorld.swift */,
+				F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -380,7 +442,12 @@
 			files = (
 				F7074F122A7AD16C0055B5A8 /* ContentView.swift in Sources */,
 				F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE90A2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7074F102A7AD16C0055B5A8 /* TodoSwiftUI_tvOSApp.swift in Sources */,
+				F7BBE9042A7AE301002FC15B /* LoginView.swift in Sources */,
+				F7BBE9162A7B2CF3002FC15B /* AuthModel.swift in Sources */,
+				F7BBE8FB2A7AE22C002FC15B /* LoginForm.swift in Sources */,
+				F7BBE9102A7B1850002FC15B /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,9 +455,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BBE9052A7AE301002FC15B /* LoginView.swift in Sources */,
 				F73D53512A7AD25300E6DD91 /* ContentView.swift in Sources */,
+				F7BBE90B2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */,
 				F73D534F2A7AD25300E6DD91 /* TodoSwiftUI_macOSApp.swift in Sources */,
+				F7BBE9172A7B2CF3002FC15B /* AuthModel.swift in Sources */,
+				F7BBE8FC2A7AE22C002FC15B /* LoginForm.swift in Sources */,
+				F7BBE9112A7B1850002FC15B /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +472,12 @@
 			files = (
 				F76C6A752A7AD378006918D8 /* ContentView.swift in Sources */,
 				F7E637792A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE90C2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F76C6A732A7AD378006918D8 /* TodoSwiftUI_watchOSApp.swift in Sources */,
+				F7BBE9062A7AE301002FC15B /* LoginView.swift in Sources */,
+				F7BBE9182A7B2CF3002FC15B /* AuthModel.swift in Sources */,
+				F7BBE8FD2A7AE22C002FC15B /* LoginForm.swift in Sources */,
+				F7BBE9122A7B1850002FC15B /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BBE9032A7AE301002FC15B /* LoginView.swift in Sources */,
+				F7BBE8FA2A7AE22C002FC15B /* LoginForm.swift in Sources */,
+				F7BBE9092A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7A326CC2A7A0E7A00060D9D /* ContentView.swift in Sources */,
 				F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE9152A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7A326CA2A7A0E7A00060D9D /* TodoSwiftUiApp.swift in Sources */,
+				F7BBE90F2A7B1850002FC15B /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
