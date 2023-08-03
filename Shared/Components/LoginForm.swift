@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginForm: View {
-    @StateObject var vm = LoginViewModel(httpService: HttpService())
+    @StateObject var vm = LoginViewModel()
     
     var body: some View {
         Form {
@@ -20,8 +20,6 @@ struct LoginForm: View {
                     await vm.login()
                 }
             })
-            
-            Text(vm.token)
         }
     }
 }

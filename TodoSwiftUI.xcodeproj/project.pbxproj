@@ -43,6 +43,26 @@
 		F7BBE9162A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
 		F7BBE9172A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
 		F7BBE9182A7B2CF3002FC15B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
+		F7BBE91A2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */; };
+		F7BBE91B2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */; };
+		F7BBE91C2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */; };
+		F7BBE91D2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */; };
+		F7BBE91F2A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
+		F7BBE9202A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
+		F7BBE9212A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
+		F7BBE9222A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
+		F7BBE9242A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
+		F7BBE9252A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
+		F7BBE9262A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
+		F7BBE9272A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
+		F7BBE9292A7B59D2002FC15B /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9282A7B59D2002FC15B /* ListModel.swift */; };
+		F7BBE92A2A7B59D2002FC15B /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9282A7B59D2002FC15B /* ListModel.swift */; };
+		F7BBE92B2A7B59D2002FC15B /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9282A7B59D2002FC15B /* ListModel.swift */; };
+		F7BBE92C2A7B59D2002FC15B /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9282A7B59D2002FC15B /* ListModel.swift */; };
+		F7BBE92F2A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
+		F7BBE9302A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
+		F7BBE9312A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
+		F7BBE9322A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
 		F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
@@ -90,6 +110,11 @@
 		F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F7BBE90E2A7B1850002FC15B /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F7BBE91E2A7B594B002FC15B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F7BBE9232A7B5964002FC15B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F7BBE9282A7B59D2002FC15B /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		F7E637752A7AD69A00E01438 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BBE9022A7AE301002FC15B /* LoginView.swift */,
+				F7BBE91E2A7B594B002FC15B /* ListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */,
+				F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */,
+				F7BBE9232A7B5964002FC15B /* ListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -254,13 +282,23 @@
 			isa = PBXGroup;
 			children = (
 				F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */,
+				F7BBE9282A7B59D2002FC15B /* ListModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F7BBE92D2A7B6481002FC15B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F7E637732A7AD40700E01438 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F7BBE92D2A7B6481002FC15B /* Extensions */,
 				F7BBE9132A7B2CDC002FC15B /* Models */,
 				F7BBE90D2A7B182E002FC15B /* Services */,
 				F7BBE9072A7B17A6002FC15B /* ViewModels */,
@@ -442,12 +480,17 @@
 			files = (
 				F7074F122A7AD16C0055B5A8 /* ContentView.swift in Sources */,
 				F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE9202A7B594B002FC15B /* ListView.swift in Sources */,
+				F7BBE92A2A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE90A2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7074F102A7AD16C0055B5A8 /* TodoSwiftUI_tvOSApp.swift in Sources */,
 				F7BBE9042A7AE301002FC15B /* LoginView.swift in Sources */,
+				F7BBE9302A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9162A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7BBE8FB2A7AE22C002FC15B /* LoginForm.swift in Sources */,
 				F7BBE9102A7B1850002FC15B /* HttpService.swift in Sources */,
+				F7BBE91B2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */,
+				F7BBE9252A7B5964002FC15B /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,12 +500,17 @@
 			files = (
 				F7BBE9052A7AE301002FC15B /* LoginView.swift in Sources */,
 				F73D53512A7AD25300E6DD91 /* ContentView.swift in Sources */,
+				F7BBE9212A7B594B002FC15B /* ListView.swift in Sources */,
+				F7BBE92B2A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE90B2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */,
 				F73D534F2A7AD25300E6DD91 /* TodoSwiftUI_macOSApp.swift in Sources */,
+				F7BBE9312A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9172A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7BBE8FC2A7AE22C002FC15B /* LoginForm.swift in Sources */,
 				F7BBE9112A7B1850002FC15B /* HttpService.swift in Sources */,
+				F7BBE91C2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */,
+				F7BBE9262A7B5964002FC15B /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,12 +520,17 @@
 			files = (
 				F76C6A752A7AD378006918D8 /* ContentView.swift in Sources */,
 				F7E637792A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE9222A7B594B002FC15B /* ListView.swift in Sources */,
+				F7BBE92C2A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE90C2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F76C6A732A7AD378006918D8 /* TodoSwiftUI_watchOSApp.swift in Sources */,
 				F7BBE9062A7AE301002FC15B /* LoginView.swift in Sources */,
+				F7BBE9322A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9182A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7BBE8FD2A7AE22C002FC15B /* LoginForm.swift in Sources */,
 				F7BBE9122A7B1850002FC15B /* HttpService.swift in Sources */,
+				F7BBE91D2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */,
+				F7BBE9272A7B5964002FC15B /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,12 +540,17 @@
 			files = (
 				F7BBE9032A7AE301002FC15B /* LoginView.swift in Sources */,
 				F7BBE8FA2A7AE22C002FC15B /* LoginForm.swift in Sources */,
+				F7BBE91F2A7B594B002FC15B /* ListView.swift in Sources */,
+				F7BBE9292A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE9092A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7A326CC2A7A0E7A00060D9D /* ContentView.swift in Sources */,
 				F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE92F2A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9152A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7A326CA2A7A0E7A00060D9D /* TodoSwiftUiApp.swift in Sources */,
 				F7BBE90F2A7B1850002FC15B /* HttpService.swift in Sources */,
+				F7BBE91A2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */,
+				F7BBE9242A7B5964002FC15B /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

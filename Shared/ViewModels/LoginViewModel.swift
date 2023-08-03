@@ -8,16 +8,11 @@
 import Foundation
 
 class LoginViewModel: ObservableObject {
-    let httpService: HttpService
+    let httpService = HttpService()
+    let authViewModel = AuthViewModel.shared
     
     @Published var userName = ""
     @Published var password = ""
-    
-    @Published var token = ""
-    
-    init(httpService: HttpService) {
-        self.httpService = httpService
-    }
     
     func login() async -> Bool {
         do {
@@ -25,9 +20,7 @@ class LoginViewModel: ObservableObject {
             
             let response: AuthModel = try await httpService.fetch(url: "/login", method: .POST(data: data))
             
-            DispatchQueue.main.async {
-                self.token = response.token
-            }
+            await authViewModel.setToken(token: response.token)
             
             return true
         } catch {

@@ -8,6 +8,7 @@
 import Foundation
 
 struct HttpService {
+    let authService = AuthViewModel.shared
     let endPoint = "http://192.168.10.106:8080"
     
     func fetch<T: Codable>(url: String, method: HttpServiceMethod = .GET) async throws -> T {
@@ -30,10 +31,27 @@ struct HttpService {
             request.httpMethod = "DELETE"
         }
         
+        let token = await authService.getToken()
+        
+        if token != nil {
+            request.setValue("Bearer \(token!)", forHTTPHeaderField: "Authorization")
+        }
+        
         let (data, response) = try await URLSession.shared.data(for: request)
         
-        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+        print(response)
+        
+        guard let response = response as? HTTPURLResponse else {
             throw HttpServiceError.invalidResponse
+        }
+        
+        if (response.statusCode == 400 || response.statusCode == 404) {
+            throw HttpServiceError.invalidResponse
+        }
+        
+        if response.statusCode == 401 {
+            await authService.removeToken()
+            throw HttpServiceError.unauthorized
         }
         
         do {
@@ -57,4 +75,5 @@ enum HttpServiceError: Error {
     case invalidUrl
     case invalidResponse
     case invalidData
+    case unauthorized
 }
