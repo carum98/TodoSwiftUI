@@ -50,7 +50,6 @@
 		F7BBE91F2A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
 		F7BBE9202A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
 		F7BBE9212A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
-		F7BBE9222A7B594B002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
 		F7BBE9242A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
 		F7BBE9252A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
 		F7BBE9262A7B5964002FC15B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
@@ -63,6 +62,27 @@
 		F7BBE9302A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
 		F7BBE9312A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
 		F7BBE9322A7B64AA002FC15B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
+		F7BBE9342A7C8D2F002FC15B /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9332A7C8D2E002FC15B /* TodoView.swift */; };
+		F7BBE9352A7C8D2F002FC15B /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9332A7C8D2E002FC15B /* TodoView.swift */; };
+		F7BBE9362A7C8D2F002FC15B /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9332A7C8D2E002FC15B /* TodoView.swift */; };
+		F7BBE9372A7C8D2F002FC15B /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9332A7C8D2E002FC15B /* TodoView.swift */; };
+		F7BBE9392A7C8F1F002FC15B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9382A7C8F1F002FC15B /* AppView.swift */; };
+		F7BBE93A2A7C8F1F002FC15B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9382A7C8F1F002FC15B /* AppView.swift */; };
+		F7BBE93B2A7C8F1F002FC15B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9382A7C8F1F002FC15B /* AppView.swift */; };
+		F7BBE93E2A7C8FAB002FC15B /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */; };
+		F7BBE93F2A7C8FAB002FC15B /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */; };
+		F7BBE9402A7C8FAB002FC15B /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */; };
+		F7BBE9412A7C8FAB002FC15B /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */; };
+		F7BBE9432A7C8FD8002FC15B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */; };
+		F7BBE9442A7C8FD8002FC15B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */; };
+		F7BBE9452A7C8FD8002FC15B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */; };
+		F7BBE9462A7C8FD8002FC15B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */; };
+		F7BBE9482A7CA750002FC15B /* ListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9472A7CA74F002FC15B /* ListTile.swift */; };
+		F7BBE9492A7CA750002FC15B /* ListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9472A7CA74F002FC15B /* ListTile.swift */; };
+		F7BBE94A2A7CA750002FC15B /* ListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9472A7CA74F002FC15B /* ListTile.swift */; };
+		F7BBE94B2A7CA750002FC15B /* ListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9472A7CA74F002FC15B /* ListTile.swift */; };
+		F7BBE94D2A7CAF38002FC15B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
+		F7BBE94E2A7CB046002FC15B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9382A7C8F1F002FC15B /* AppView.swift */; };
 		F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
@@ -115,6 +135,11 @@
 		F7BBE9232A7B5964002FC15B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		F7BBE9282A7B59D2002FC15B /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		F7BBE9332A7C8D2E002FC15B /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		F7BBE9382A7C8F1F002FC15B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		F7BBE9472A7CA74F002FC15B /* ListTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTile.swift; sourceTree = "<group>"; };
 		F7E637752A7AD69A00E01438 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +281,8 @@
 			children = (
 				F7BBE9022A7AE301002FC15B /* LoginView.swift */,
 				F7BBE91E2A7B594B002FC15B /* ListView.swift */,
+				F7BBE9332A7C8D2E002FC15B /* TodoView.swift */,
+				F7BBE9382A7C8F1F002FC15B /* AppView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,6 +293,7 @@
 				F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */,
 				F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */,
 				F7BBE9232A7B5964002FC15B /* ListViewModel.swift */,
+				F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,6 +311,7 @@
 			children = (
 				F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */,
 				F7BBE9282A7B59D2002FC15B /* ListModel.swift */,
+				F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,6 +342,7 @@
 			children = (
 				F7E637752A7AD69A00E01438 /* HelloWorld.swift */,
 				F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */,
+				F7BBE9472A7CA74F002FC15B /* ListTile.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -478,13 +508,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BBE93F2A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F7074F122A7AD16C0055B5A8 /* ContentView.swift in Sources */,
 				F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE9442A7C8FD8002FC15B /* TodoModel.swift in Sources */,
+				F7BBE9352A7C8D2F002FC15B /* TodoView.swift in Sources */,
+				F7BBE9492A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE9202A7B594B002FC15B /* ListView.swift in Sources */,
 				F7BBE92A2A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE90A2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7074F102A7AD16C0055B5A8 /* TodoSwiftUI_tvOSApp.swift in Sources */,
 				F7BBE9042A7AE301002FC15B /* LoginView.swift in Sources */,
+				F7BBE93A2A7C8F1F002FC15B /* AppView.swift in Sources */,
 				F7BBE9302A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9162A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7BBE8FB2A7AE22C002FC15B /* LoginForm.swift in Sources */,
@@ -498,13 +533,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BBE9402A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F7BBE9052A7AE301002FC15B /* LoginView.swift in Sources */,
 				F73D53512A7AD25300E6DD91 /* ContentView.swift in Sources */,
+				F7BBE9452A7C8FD8002FC15B /* TodoModel.swift in Sources */,
+				F7BBE9362A7C8D2F002FC15B /* TodoView.swift in Sources */,
+				F7BBE94A2A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE9212A7B594B002FC15B /* ListView.swift in Sources */,
 				F7BBE92B2A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE90B2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */,
 				F73D534F2A7AD25300E6DD91 /* TodoSwiftUI_macOSApp.swift in Sources */,
+				F7BBE93B2A7C8F1F002FC15B /* AppView.swift in Sources */,
 				F7BBE9312A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9172A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7BBE8FC2A7AE22C002FC15B /* LoginForm.swift in Sources */,
@@ -518,9 +558,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BBE9412A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F76C6A752A7AD378006918D8 /* ContentView.swift in Sources */,
+				F7BBE94E2A7CB046002FC15B /* AppView.swift in Sources */,
 				F7E637792A7AD69A00E01438 /* HelloWorld.swift in Sources */,
-				F7BBE9222A7B594B002FC15B /* ListView.swift in Sources */,
+				F7BBE94D2A7CAF38002FC15B /* ListView.swift in Sources */,
+				F7BBE94B2A7CA750002FC15B /* ListTile.swift in Sources */,
+				F7BBE9462A7C8FD8002FC15B /* TodoModel.swift in Sources */,
+				F7BBE9372A7C8D2F002FC15B /* TodoView.swift in Sources */,
 				F7BBE92C2A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE90C2A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F76C6A732A7AD378006918D8 /* TodoSwiftUI_watchOSApp.swift in Sources */,
@@ -538,13 +583,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BBE93E2A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F7BBE9032A7AE301002FC15B /* LoginView.swift in Sources */,
 				F7BBE8FA2A7AE22C002FC15B /* LoginForm.swift in Sources */,
+				F7BBE9432A7C8FD8002FC15B /* TodoModel.swift in Sources */,
+				F7BBE9342A7C8D2F002FC15B /* TodoView.swift in Sources */,
+				F7BBE9482A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE91F2A7B594B002FC15B /* ListView.swift in Sources */,
 				F7BBE9292A7B59D2002FC15B /* ListModel.swift in Sources */,
 				F7BBE9092A7B17DA002FC15B /* LoginViewModel.swift in Sources */,
 				F7A326CC2A7A0E7A00060D9D /* ContentView.swift in Sources */,
 				F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */,
+				F7BBE9392A7C8F1F002FC15B /* AppView.swift in Sources */,
 				F7BBE92F2A7B64AA002FC15B /* Color+Extensions.swift in Sources */,
 				F7BBE9152A7B2CF3002FC15B /* AuthModel.swift in Sources */,
 				F7A326CA2A7A0E7A00060D9D /* TodoSwiftUiApp.swift in Sources */,

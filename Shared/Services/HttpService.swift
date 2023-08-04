@@ -39,8 +39,6 @@ struct HttpService {
         
         let (data, response) = try await URLSession.shared.data(for: request)
         
-        print(response)
-        
         guard let response = response as? HTTPURLResponse else {
             throw HttpServiceError.invalidResponse
         }

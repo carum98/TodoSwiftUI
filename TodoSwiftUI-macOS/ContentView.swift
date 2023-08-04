@@ -8,19 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var authViewModel = AuthViewModel.shared
-    
     var body: some View {
-        if authViewModel.isAuth {
-            NavigationView {
-                VStack {
-                    ListView()
-                }
-                Text("Todos")
-            }
-        } else {
-            LoginView()
-        }
+        AppView()
     }
 }
 

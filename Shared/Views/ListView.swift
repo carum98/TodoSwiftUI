@@ -9,24 +9,31 @@ import SwiftUI
 
 struct ListView: View {
     @StateObject var vm = ListViewModel()
+    @Binding var selected: ListModel?
     
     var body: some View {
+        #if os(watchOS)
         List(vm.items) { item in
-            HStack {
-                Image(systemName: "circle.fill")
-                  .frame(width: 20, height: 20)
-                  .foregroundColor(Color(hex: item.color))
-                Text(item.name)
+            NavigationLink(value: item) {
+                ListTile(list: item)
+            }
+        }
+        .navigationDestination(for: ListModel.self) { item in
+            TodoView(list: item)
+                .navigationTitle(item.name)
+        }
+        .task {
+            await vm.getData()
+        }
+        #else
+        List(vm.items, selection: $selected) { item in
+            NavigationLink(value: item) {
+                ListTile(list: item)
             }
         }
         .task {
             await vm.getData()
         }
-    }
-}
-
-struct ListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ListView()
+        #endif
     }
 }
