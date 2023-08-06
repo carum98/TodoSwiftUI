@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 @MainActor
 class ListViewModel: ObservableObject {
@@ -22,9 +23,9 @@ class ListViewModel: ObservableObject {
         }
     }
     
-    func create(name: String, color: String) async {
+    func create(name: String, color: Color) async {
         do {
-            let data = try? JSONEncoder().encode(["name": name, "color": color])
+            let data = try? JSONEncoder().encode(["name": name, "color": color.toHex()])
         
             let response: ListModel = try await httpService.fetch(url: "/lists", method: .POST(data: data))
             self.items.append(response)
@@ -33,9 +34,9 @@ class ListViewModel: ObservableObject {
         }
     }
     
-    func update(id: Int, name: String, color: String) async {
+    func update(id: Int, name: String, color: Color) async {
         do {
-            let data = try? JSONEncoder().encode(["name": name, "color": color])
+            let data = try? JSONEncoder().encode(["name": name, "color": color.toHex()])
         
             let response: ListModel = try await httpService.fetch(url: "/lists/\(id)", method: .PUT(data: data))
             

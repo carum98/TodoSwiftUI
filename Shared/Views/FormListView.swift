@@ -14,6 +14,7 @@ struct FormListView: View {
     let list: ListModel?
     
     @State var name: String
+    @State var color: Color
     
     init(list: ListModel?, listViewModel: ListViewModel, onSave: @escaping () -> Void) {
         self.list = list
@@ -21,14 +22,15 @@ struct FormListView: View {
         self.onSave = onSave
         
         _name = State(initialValue: list?.name ?? "")
+        _color = State(initialValue: list != nil ? Color(hex: list!.color) : Color.red)
     }
     
     func save() {
         Task {
             if (list != nil) {
-                await listViewModel.update(id: list!.id, name: name, color: "#FF0000")
+                await listViewModel.update(id: list!.id, name: name, color: color)
             } else {
-                await listViewModel.create(name: name, color: "#FF0000")
+                await listViewModel.create(name: name, color: color)
             }
             
             onSave()
@@ -39,6 +41,7 @@ struct FormListView: View {
         Form {
             Section {
                 TextField("Name", text: $name)
+                ColorPicker("Color", selection: $color, supportsOpacity: false)
             }
             
             Section {
