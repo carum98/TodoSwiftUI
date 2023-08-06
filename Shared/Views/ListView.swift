@@ -12,59 +12,37 @@ struct ListView: View {
     @Binding var selected: ListModel?
     
     @State private var showingSheet = false
-    @State private var showingAlert = false
     
-    @State private var selectedAction: ListModel?
+    private let listWithSelection: Bool
+    
+    init() {
+        self._selected = Binding.constant(nil)
+        self.listWithSelection = false
+    }
+    
+    init(selected: Binding<ListModel?>) {
+        self._selected = selected
+        self.listWithSelection = true
+    }
+    
+    @ViewBuilder
+    func ListBuilder(items: [ListModel], rowContent: @escaping (ListModel) -> some View) -> some View {
+        if self.listWithSelection {
+            #if os(watchOS)
+                List(items, rowContent: rowContent)
+            #else
+                List(items, selection: $selected, rowContent: rowContent)
+            #endif
+        } else {
+            List(items, rowContent: rowContent)
+        }
+    }
     
     var body: some View {
-        #if os(watchOS)
-        List(vm.items) { item in
+        ListBuilder(items: vm.items) { item in
             NavigationLink(value: item) {
-                ListTile(list: item)
+                ListTile(listViewModel: vm, list: item)
             }
-        }
-        .navigationDestination(for: ListModel.self) { item in
-            TodoView(list: item)
-                .navigationTitle(item.name)
-        }
-        .task {
-            await vm.getData()
-        }
-        #else
-        List(vm.items, selection: $selected) { item in
-            NavigationLink(value: item) {
-                ListTile(list: item)
-                    .swipeActions(edge: .leading) {
-                        Button("Edit", action: {
-                            selectedAction = item
-                            showingSheet.toggle()
-                        }).tint(.blue)
-                    }
-                    .swipeActions(edge: .trailing) {
-                        Button("Delete", action: {
-                            selectedAction = item
-                            showingAlert.toggle()
-                        }).tint(.red)
-                    }
-            }
-        }
-        .alert(isPresented: $showingAlert) {
-            Alert(
-                title: Text("Are you sure you want to delete the List?"),
-                message: Text("There is no undo"),
-                primaryButton: .destructive(Text("Delete")) {
-                    Task {
-                        await vm.remove(id: selectedAction!.id)
-                            
-                        if let index = vm.items.firstIndex(of: selectedAction!) {
-                            withAnimation(.spring()){
-                                _ = vm.items.remove(at: index)
-                            }
-                        }
-                    }
-                },
-                secondaryButton: .cancel()
-            )
         }
         .toolbar {
             Button {
@@ -73,8 +51,8 @@ struct ListView: View {
                 Label("Add", systemImage: "plus")
             }
         }
-        .sheet(isPresented: $showingSheet, onDismiss: { selectedAction = nil }) {
-            FormListView(list: selectedAction, listViewModel: vm) {
+        .sheet(isPresented: $showingSheet) {
+            FormListView(list: nil, listViewModel: vm) {
                 showingSheet.toggle()
             }
                 .presentationDetents([.medium])
@@ -83,7 +61,6 @@ struct ListView: View {
         .task {
             await vm.getData()
         }
-        #endif
     }
 }
 

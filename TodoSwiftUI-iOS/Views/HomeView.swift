@@ -1,19 +1,17 @@
 //
-//  AppView.swift
-//  TodoSwiftUI
+//  HomeView.swift
+//  TodoSwiftUI-iOS
 //
-//  Created by Carlos Eduardo Umaña Acevedo on 3/8/23.
+//  Created by Carlos Eduardo Umaña Acevedo on 6/8/23.
 //
 
 import SwiftUI
 
-struct AppView: View {
-    @StateObject var authViewModel = AuthViewModel.shared
-    
+struct HomeView: View {
     @State private var list: ListModel?
     
     var body: some View {
-        if authViewModel.isAuth {
+        if UIDevice.current.userInterfaceIdiom == .pad {
             NavigationSplitView {
                 ListView(selected: $list)
                     .navigationTitle("Lists")
@@ -27,13 +25,20 @@ struct AppView: View {
                 }
             }.navigationSplitViewStyle(.balanced)
         } else {
-            LoginView()
+            NavigationStack {
+                ListView()
+                    .navigationTitle("Lists")
+                    .navigationDestination(for: ListModel.self) { item in
+                        TodoView(list: item)
+                            .navigationTitle(item.name)
+                    }
+            }
         }
     }
 }
 
-struct AppView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        AppView()
+        HomeView()
     }
 }

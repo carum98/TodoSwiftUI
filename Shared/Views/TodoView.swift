@@ -11,7 +11,6 @@ struct TodoView: View {
     @StateObject var vm = TodoViewModel()
     
     @State private var showingSheet = false
-    @State private var showingAlert = false
     
     @State private var selectedAction: TodoModel?
     
@@ -20,24 +19,7 @@ struct TodoView: View {
     var body: some View {
         List {
             ForEach(vm.items) { item in
-                TodoTile(todo: item)
-                    .onTapGesture {
-                        Task {
-                            await vm.toggle(todo: item)
-                        }
-                    }
-                    .swipeActions(edge: .leading) {
-                        Button("Edit", action: {
-                            selectedAction = item
-                            showingSheet.toggle()
-                        }).tint(.blue)
-                    }
-                    .swipeActions(edge: .trailing) {
-                        Button("Delete", action: {
-                            selectedAction = item
-                            showingAlert.toggle()
-                        }).tint(.red)
-                    }
+                TodoTile(todoViewModel: vm, todo: item, list: list)
             }
             .onMove { fromOffset, toOffset in
                 Task {
@@ -47,25 +29,13 @@ struct TodoView: View {
                 }
             }
         }
+        #if os(watchOS)
+        .listStyle(.carousel)
+        #elseif os(tvOS)
+        .listStyle(.automatic)
+        #else
         .listStyle(.inset)
-        .alert(isPresented: $showingAlert) {
-            Alert(
-                title: Text("Are you sure you want to delete the Todo?"),
-                message: Text("There is no undo"),
-                primaryButton: .destructive(Text("Delete")) {
-                    Task {
-                        await vm.remove(todo: selectedAction!)
-                            
-                        if let index = vm.items.firstIndex(of: selectedAction!) {
-                            withAnimation(.spring()){
-                                _ = vm.items.remove(at: index)
-                            }
-                        }
-                    }
-                },
-                secondaryButton: .cancel()
-            )
-        }
+        #endif
         .toolbar {
             Button {
                 showingSheet.toggle()
@@ -73,8 +43,8 @@ struct TodoView: View {
                 Label("Add", systemImage: "plus")
             }
         }
-        .sheet(isPresented: $showingSheet, onDismiss: { selectedAction = nil }) {
-            FormTodoView(todo: selectedAction, list: list, todoViewModel: vm) {
+        .sheet(isPresented: $showingSheet) {
+            FormTodoView(todo: nil, list: list, todoViewModel: vm) {
                 showingSheet.toggle()
             }
                 .presentationDetents([.medium])
