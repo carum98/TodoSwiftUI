@@ -20,3 +20,7 @@ struct TodoModel: Codable, Identifiable, Hashable {
         return TodoModel(id: 1, title: "Create new project", is_complete: true)
     }
 }
+
+struct TodoMessageMove: Codable {
+    let message: String
+}

@@ -23,6 +23,7 @@ struct AppView: View {
                         .navigationTitle(item.name)
                 } else {
                   Text("Select list")
+                        .navigationTitle("Todo")
                 }
             }.navigationSplitViewStyle(.balanced)
         } else {

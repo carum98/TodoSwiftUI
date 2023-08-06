@@ -87,6 +87,14 @@
 		F7C6CFFD2A7EE20C002BF109 /* FormListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6CFFB2A7EE20C002BF109 /* FormListView.swift */; };
 		F7C6CFFE2A7EE20C002BF109 /* FormListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6CFFB2A7EE20C002BF109 /* FormListView.swift */; };
 		F7C6CFFF2A7EE20C002BF109 /* FormListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6CFFB2A7EE20C002BF109 /* FormListView.swift */; };
+		F7C6D0012A7F4CAF002BF109 /* TodoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */; };
+		F7C6D0022A7F4CAF002BF109 /* TodoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */; };
+		F7C6D0032A7F4CAF002BF109 /* TodoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */; };
+		F7C6D0042A7F4CAF002BF109 /* TodoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */; };
+		F7C6D0062A7F513C002BF109 /* FormTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0052A7F513C002BF109 /* FormTodoView.swift */; };
+		F7C6D0072A7F513C002BF109 /* FormTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0052A7F513C002BF109 /* FormTodoView.swift */; };
+		F7C6D0082A7F513C002BF109 /* FormTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0052A7F513C002BF109 /* FormTodoView.swift */; };
+		F7C6D0092A7F513C002BF109 /* FormTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0052A7F513C002BF109 /* FormTodoView.swift */; };
 		F7E637762A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
 		F7E637782A7AD69A00E01438 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E637752A7AD69A00E01438 /* HelloWorld.swift */; };
@@ -145,6 +153,8 @@
 		F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		F7BBE9472A7CA74F002FC15B /* ListTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTile.swift; sourceTree = "<group>"; };
 		F7C6CFFB2A7EE20C002BF109 /* FormListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormListView.swift; sourceTree = "<group>"; };
+		F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTile.swift; sourceTree = "<group>"; };
+		F7C6D0052A7F513C002BF109 /* FormTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTodoView.swift; sourceTree = "<group>"; };
 		F7E637752A7AD69A00E01438 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -289,6 +299,7 @@
 				F7BBE9332A7C8D2E002FC15B /* TodoView.swift */,
 				F7BBE9382A7C8F1F002FC15B /* AppView.swift */,
 				F7C6CFFB2A7EE20C002BF109 /* FormListView.swift */,
+				F7C6D0052A7F513C002BF109 /* FormTodoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +360,7 @@
 				F7E637752A7AD69A00E01438 /* HelloWorld.swift */,
 				F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */,
 				F7BBE9472A7CA74F002FC15B /* ListTile.swift */,
+				F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -514,11 +526,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C6D0072A7F513C002BF109 /* FormTodoView.swift in Sources */,
 				F7BBE93F2A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F7074F122A7AD16C0055B5A8 /* ContentView.swift in Sources */,
 				F7E637772A7AD69A00E01438 /* HelloWorld.swift in Sources */,
 				F7BBE9442A7C8FD8002FC15B /* TodoModel.swift in Sources */,
 				F7BBE9352A7C8D2F002FC15B /* TodoView.swift in Sources */,
+				F7C6D0022A7F4CAF002BF109 /* TodoTile.swift in Sources */,
 				F7BBE9492A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE9202A7B594B002FC15B /* ListView.swift in Sources */,
 				F7BBE92A2A7B59D2002FC15B /* ListModel.swift in Sources */,
@@ -540,11 +554,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C6D0082A7F513C002BF109 /* FormTodoView.swift in Sources */,
 				F7BBE9402A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F7BBE9052A7AE301002FC15B /* LoginView.swift in Sources */,
 				F73D53512A7AD25300E6DD91 /* ContentView.swift in Sources */,
 				F7BBE9452A7C8FD8002FC15B /* TodoModel.swift in Sources */,
 				F7BBE9362A7C8D2F002FC15B /* TodoView.swift in Sources */,
+				F7C6D0032A7F4CAF002BF109 /* TodoTile.swift in Sources */,
 				F7BBE94A2A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE9212A7B594B002FC15B /* ListView.swift in Sources */,
 				F7BBE92B2A7B59D2002FC15B /* ListModel.swift in Sources */,
@@ -566,11 +582,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C6D0092A7F513C002BF109 /* FormTodoView.swift in Sources */,
 				F7BBE9412A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F76C6A752A7AD378006918D8 /* ContentView.swift in Sources */,
 				F7BBE94E2A7CB046002FC15B /* AppView.swift in Sources */,
 				F7E637792A7AD69A00E01438 /* HelloWorld.swift in Sources */,
 				F7BBE94D2A7CAF38002FC15B /* ListView.swift in Sources */,
+				F7C6D0042A7F4CAF002BF109 /* TodoTile.swift in Sources */,
 				F7BBE94B2A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE9462A7C8FD8002FC15B /* TodoModel.swift in Sources */,
 				F7BBE9372A7C8D2F002FC15B /* TodoView.swift in Sources */,
@@ -592,11 +610,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C6D0062A7F513C002BF109 /* FormTodoView.swift in Sources */,
 				F7BBE93E2A7C8FAB002FC15B /* TodoViewModel.swift in Sources */,
 				F7BBE9032A7AE301002FC15B /* LoginView.swift in Sources */,
 				F7BBE8FA2A7AE22C002FC15B /* LoginForm.swift in Sources */,
 				F7BBE9432A7C8FD8002FC15B /* TodoModel.swift in Sources */,
 				F7BBE9342A7C8D2F002FC15B /* TodoView.swift in Sources */,
+				F7C6D0012A7F4CAF002BF109 /* TodoTile.swift in Sources */,
 				F7BBE9482A7CA750002FC15B /* ListTile.swift in Sources */,
 				F7BBE91F2A7B594B002FC15B /* ListView.swift in Sources */,
 				F7BBE9292A7B59D2002FC15B /* ListModel.swift in Sources */,
