@@ -82,10 +82,18 @@ extension Color {
     }
     
     func toHex() -> String? {
-        let uic = UIColor(self)
-        guard let components = uic.cgColor.components, components.count >= 3 else {
+        let uic = {
+            #if os(macOS)
+            NSColor(self)
+            #else
+            UIColor(self)
+            #endif
+        }
+        
+        guard let components = uic().cgColor.components, components.count >= 3 else {
             return nil
         }
+        
         let r = Float(components[0])
         let g = Float(components[1])
         let b = Float(components[2])
