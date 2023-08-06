@@ -25,8 +25,10 @@ struct HttpService {
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             request.httpBody = data
-        case .PUT:
+        case .PUT(let data):
             request.httpMethod = "PUT"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpBody = data
         case .DELETE:
             request.httpMethod = "DELETE"
         }
@@ -65,7 +67,7 @@ struct HttpService {
 enum HttpServiceMethod {
     case GET
     case POST(data: Data?)
-    case PUT
+    case PUT(data: Data?)
     case DELETE
 }
 
