@@ -12,10 +12,11 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ListView()
-            .navigationDestination(for: ListModel.self) { item in
-                TodoView(list: item)
-                    .navigationTitle(item.name)
-            }
+                .navigationTitle("Lists")
+                .navigationDestination(for: ListModel.self) { item in
+                    TodoView(list: item)
+                        .navigationTitle(item.name)
+                }
         }
     }
 }

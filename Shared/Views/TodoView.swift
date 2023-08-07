@@ -9,10 +9,7 @@ import SwiftUI
 
 struct TodoView: View {
     @StateObject var vm = TodoViewModel()
-    
     @State private var showingSheet = false
-    
-    @State private var selectedAction: TodoModel?
     
     let list: ListModel
     

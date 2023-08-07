@@ -16,12 +16,28 @@ struct TodoTile: View {
     @State private var showingAlert = false
     
     var body: some View {
-        HStack {
-            Image(systemName: todo.is_complete ? "record.circle" : "circle")
-                .foregroundColor(todo.is_complete ? .blue : nil)
-            Text(todo.title)
+        Button {
+            Task {
+                await todoViewModel.toggle(todo: todo)
+            }
+        } label: {
+            HStack {
+                Image(systemName: todo.is_complete ? "record.circle" : "circle")
+                    .foregroundColor(todo.is_complete ? .blue : nil)
+                Text(todo.title)
+            }
         }
-        #if !os(tvOS)
+        .buttonStyle(PlainButtonStyle())
+        #if os(tvOS) || os(macOS)
+        .contextMenu {
+            Button("Edit", action: {
+                showingSheet.toggle()
+            })
+            Button("Delete", action: {
+                showingAlert.toggle()
+            })
+        }
+        #else
         .swipeActions(edge: .leading) {
             Button("Edit", action: {
                 showingSheet.toggle()
@@ -34,34 +50,29 @@ struct TodoTile: View {
         }
         #endif
         .confirmationDialog(
-             Text("Are you sure you want to delete the ToDo?"),
-             isPresented: $showingAlert,
-             titleVisibility: .visible
-         ) {
-             Button("Delete", role: .destructive) {
-                 Task {
-                     await todoViewModel.remove(todo: todo)
+            Text("Are you sure you want to delete the ToDo?"),
+            isPresented: $showingAlert,
+            titleVisibility: .visible
+        ) {
+            Button("Delete", role: .destructive) {
+                Task {
+                    await todoViewModel.remove(todo: todo)
 
-                     if let index = todoViewModel.items.firstIndex(of: todo) {
-                         withAnimation(.spring()){
-                             _ = todoViewModel.items.remove(at: index)
-                         }
-                     }
-                 }
-             }
-         }
-         .onTapGesture {
-             Task {
-                 await todoViewModel.toggle(todo: todo)
-             }
-         }
-         .sheet(isPresented: $showingSheet) {
-             FormTodoView(todo: todo, list: list, todoViewModel: todoViewModel) {
-                 showingSheet.toggle()
-             }
-                 .presentationDetents([.medium])
-                 .presentationDragIndicator(.visible)
-         }
+                    if let index = todoViewModel.items.firstIndex(of: todo) {
+                        withAnimation(.spring()){
+                            _ = todoViewModel.items.remove(at: index)
+                        }
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            FormTodoView(todo: todo, list: list, todoViewModel: todoViewModel) {
+                showingSheet.toggle()
+            }
+            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
+        }
     }
 }
 

@@ -23,7 +23,16 @@ struct ListTile: View {
                 .foregroundColor(Color(hex: list.color))
             Text(list.name)
         }
-        #if !os(tvOS)
+        #if os(tvOS) || os(macOS)
+        .contextMenu {
+            Button("Edit", action: {
+                showingSheet.toggle()
+            })
+            Button("Delete", action: {
+                showingAlert.toggle()
+            })
+        }
+        #else
         .swipeActions(edge: .leading) {
             Button("Edit", action: {
                 showingSheet.toggle()
