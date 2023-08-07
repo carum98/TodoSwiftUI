@@ -27,7 +27,9 @@ struct TodoTile: View {
                 Text(todo.title)
             }
         }
-        .buttonStyle(PlainButtonStyle())
+        #if os(macOS)
+        .buttonStyle(.plain)
+        #endif
         #if os(tvOS) || os(macOS)
         .contextMenu {
             Button("Edit", action: {

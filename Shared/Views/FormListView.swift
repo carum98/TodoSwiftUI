@@ -41,9 +41,7 @@ struct FormListView: View {
         Form {
             Section {
                 TextField("Name", text: $name)
-                #if !os(watchOS) && !os(tvOS)
-                ColorPicker("Color", selection: $color, supportsOpacity: false)
-                #endif
+                PickerColor(color: $color)
             }
             
             Section {
