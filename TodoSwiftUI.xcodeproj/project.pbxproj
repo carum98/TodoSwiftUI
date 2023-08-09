@@ -19,6 +19,29 @@
 		F76C6A752A7AD378006918D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C6A742A7AD378006918D8 /* ContentView.swift */; };
 		F76C6A772A7AD37A006918D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76C6A762A7AD37A006918D8 /* Assets.xcassets */; };
 		F76C6A7A2A7AD37A006918D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76C6A792A7AD37A006918D8 /* Preview Assets.xcassets */; };
+		F7742E5D2A83423700C81A77 /* TodoSwiftUI_macOS_MenuBar_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7742E5C2A83423700C81A77 /* TodoSwiftUI_macOS_MenuBar_AppApp.swift */; };
+		F7742E5F2A83423700C81A77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7742E5E2A83423700C81A77 /* ContentView.swift */; };
+		F7742E612A83423A00C81A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7742E602A83423A00C81A77 /* Assets.xcassets */; };
+		F7742E642A83423A00C81A77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7742E632A83423A00C81A77 /* Preview Assets.xcassets */; };
+		F7742E692A8343BD00C81A77 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */; };
+		F7742E6A2A8343D800C81A77 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9022A7AE301002FC15B /* LoginView.swift */; };
+		F7742E6B2A8343F300C81A77 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8F92A7AE22C002FC15B /* LoginForm.swift */; };
+		F7742E6C2A83441D00C81A77 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9082A7B17DA002FC15B /* LoginViewModel.swift */; };
+		F7742E6D2A83442D00C81A77 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE90E2A7B1850002FC15B /* HttpService.swift */; };
+		F7742E6E2A83445D00C81A77 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9142A7B2CF3002FC15B /* AuthModel.swift */; };
+		F7742E712A83459000C81A77 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7742E702A83459000C81A77 /* HomeView.swift */; };
+		F7742E722A8345A600C81A77 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE91E2A7B594B002FC15B /* ListView.swift */; };
+		F7742E732A8345AA00C81A77 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9332A7C8D2E002FC15B /* TodoView.swift */; };
+		F7742E742A8345AD00C81A77 /* FormListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6CFFB2A7EE20C002BF109 /* FormListView.swift */; };
+		F7742E752A8345B000C81A77 /* FormTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0052A7F513C002BF109 /* FormTodoView.swift */; };
+		F7742E762A8345B800C81A77 /* ListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9472A7CA74F002FC15B /* ListTile.swift */; };
+		F7742E772A8345BB00C81A77 /* TodoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D0002A7F4CAE002BF109 /* TodoTile.swift */; };
+		F7742E782A8345BE00C81A77 /* PickerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6D01C2A809D6B002BF109 /* PickerColor.swift */; };
+		F7742E792A8345C900C81A77 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE93D2A7C8FAB002FC15B /* TodoViewModel.swift */; };
+		F7742E7A2A8345D000C81A77 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9282A7B59D2002FC15B /* ListModel.swift */; };
+		F7742E7B2A8345D500C81A77 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */; };
+		F7742E7C2A8345D900C81A77 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
+		F7742E7D2A83462600C81A77 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
 		F7A326CA2A7A0E7A00060D9D /* TodoSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A326C92A7A0E7A00060D9D /* TodoSwiftUiApp.swift */; };
 		F7A326CC2A7A0E7A00060D9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A326CB2A7A0E7A00060D9D /* ContentView.swift */; };
 		F7A326CE2A7A0E7C00060D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A326CD2A7A0E7C00060D9D /* Assets.xcassets */; };
@@ -135,6 +158,13 @@
 		F76C6A742A7AD378006918D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F76C6A762A7AD37A006918D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76C6A792A7AD37A006918D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7742E5A2A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoSwiftUI-macOS MenuBar App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7742E5C2A83423700C81A77 /* TodoSwiftUI_macOS_MenuBar_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUI_macOS_MenuBar_AppApp.swift; sourceTree = "<group>"; };
+		F7742E5E2A83423700C81A77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7742E602A83423A00C81A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7742E632A83423A00C81A77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7742E652A83423A00C81A77 /* TodoSwiftUI_macOS_MenuBar_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodoSwiftUI_macOS_MenuBar_App.entitlements; sourceTree = "<group>"; };
+		F7742E702A83459000C81A77 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F7A326C62A7A0E7A00060D9D /* TodoSwiftUI-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoSwiftUI-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A326C92A7A0E7A00060D9D /* TodoSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUiApp.swift; sourceTree = "<group>"; };
 		F7A326CB2A7A0E7A00060D9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -182,6 +212,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F76C6A6D2A7AD378006918D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7742E572A83423700C81A77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,6 +296,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F7742E5B2A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App */ = {
+			isa = PBXGroup;
+			children = (
+				F7742E6F2A83458100C81A77 /* Views */,
+				F7742E5C2A83423700C81A77 /* TodoSwiftUI_macOS_MenuBar_AppApp.swift */,
+				F7742E5E2A83423700C81A77 /* ContentView.swift */,
+				F7742E602A83423A00C81A77 /* Assets.xcassets */,
+				F7742E652A83423A00C81A77 /* TodoSwiftUI_macOS_MenuBar_App.entitlements */,
+				F7742E622A83423A00C81A77 /* Preview Content */,
+			);
+			path = "TodoSwiftUI-macOS MenuBar App";
+			sourceTree = "<group>";
+		};
+		F7742E622A83423A00C81A77 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7742E632A83423A00C81A77 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7742E6F2A83458100C81A77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7742E702A83459000C81A77 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F7A326BD2A7A0E7A00060D9D = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +333,7 @@
 				F7074F0E2A7AD16C0055B5A8 /* TodoSwiftUI-tvOS */,
 				F73D534D2A7AD25300E6DD91 /* TodoSwiftUI-macOS */,
 				F76C6A712A7AD378006918D8 /* TodoSwiftUI-watchOS Watch App */,
+				F7742E5B2A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App */,
 				F7A326C72A7A0E7A00060D9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -278,6 +345,7 @@
 				F7074F0D2A7AD16C0055B5A8 /* TodoSwiftUI-tvOS.app */,
 				F73D534C2A7AD25300E6DD91 /* TodoSwiftUI-macOS.app */,
 				F76C6A702A7AD378006918D8 /* TodoSwiftUI-watchOS Watch App.app */,
+				F7742E5A2A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -463,6 +531,23 @@
 			productReference = F76C6A702A7AD378006918D8 /* TodoSwiftUI-watchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F7742E592A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7742E682A83423A00C81A77 /* Build configuration list for PBXNativeTarget "TodoSwiftUI-macOS MenuBar App" */;
+			buildPhases = (
+				F7742E562A83423700C81A77 /* Sources */,
+				F7742E572A83423700C81A77 /* Frameworks */,
+				F7742E582A83423700C81A77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TodoSwiftUI-macOS MenuBar App";
+			productName = "TodoSwiftUI-macOS MenuBar App";
+			productReference = F7742E5A2A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F7A326C52A7A0E7A00060D9D /* TodoSwiftUI-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7A326D52A7A0E7C00060D9D /* Build configuration list for PBXNativeTarget "TodoSwiftUI-iOS" */;
@@ -500,6 +585,9 @@
 					F76C6A6F2A7AD378006918D8 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					F7742E592A83423700C81A77 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					F7A326C52A7A0E7A00060D9D = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -522,6 +610,7 @@
 				F7074F0C2A7AD16C0055B5A8 /* TodoSwiftUI-tvOS */,
 				F73D534B2A7AD25300E6DD91 /* TodoSwiftUI-macOS */,
 				F76C6A6F2A7AD378006918D8 /* TodoSwiftUI-watchOS Watch App */,
+				F7742E592A83423700C81A77 /* TodoSwiftUI-macOS MenuBar App */,
 			);
 		};
 /* End PBXProject section */
@@ -551,6 +640,15 @@
 			files = (
 				F76C6A7A2A7AD37A006918D8 /* Preview Assets.xcassets in Resources */,
 				F76C6A772A7AD37A006918D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7742E582A83423700C81A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7742E642A83423A00C81A77 /* Preview Assets.xcassets in Resources */,
+				F7742E612A83423A00C81A77 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +748,34 @@
 				F7BBE9122A7B1850002FC15B /* HttpService.swift in Sources */,
 				F7BBE91D2A7B4AA9002FC15B /* AuthViewModel.swift in Sources */,
 				F7BBE9272A7B5964002FC15B /* ListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7742E562A83423700C81A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7742E712A83459000C81A77 /* HomeView.swift in Sources */,
+				F7742E6B2A8343F300C81A77 /* LoginForm.swift in Sources */,
+				F7742E7D2A83462600C81A77 /* ListViewModel.swift in Sources */,
+				F7742E722A8345A600C81A77 /* ListView.swift in Sources */,
+				F7742E5F2A83423700C81A77 /* ContentView.swift in Sources */,
+				F7742E742A8345AD00C81A77 /* FormListView.swift in Sources */,
+				F7742E772A8345BB00C81A77 /* TodoTile.swift in Sources */,
+				F7742E752A8345B000C81A77 /* FormTodoView.swift in Sources */,
+				F7742E6C2A83441D00C81A77 /* LoginViewModel.swift in Sources */,
+				F7742E7B2A8345D500C81A77 /* TodoModel.swift in Sources */,
+				F7742E762A8345B800C81A77 /* ListTile.swift in Sources */,
+				F7742E7A2A8345D000C81A77 /* ListModel.swift in Sources */,
+				F7742E792A8345C900C81A77 /* TodoViewModel.swift in Sources */,
+				F7742E782A8345BE00C81A77 /* PickerColor.swift in Sources */,
+				F7742E5D2A83423700C81A77 /* TodoSwiftUI_macOS_MenuBar_AppApp.swift in Sources */,
+				F7742E6A2A8343D800C81A77 /* LoginView.swift in Sources */,
+				F7742E7C2A8345D900C81A77 /* Color+Extensions.swift in Sources */,
+				F7742E6E2A83445D00C81A77 /* AuthModel.swift in Sources */,
+				F7742E692A8343BD00C81A77 /* AuthViewModel.swift in Sources */,
+				F7742E732A8345AA00C81A77 /* TodoView.swift in Sources */,
+				F7742E6D2A83442D00C81A77 /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +984,66 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		F7742E662A83423A00C81A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-macOS MenuBar App/TodoSwiftUI_macOS_MenuBar_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoSwiftUI-macOS MenuBar App/Preview Content\"";
+				DEVELOPMENT_TEAM = YUUW8QNH75;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.example.TodoSwiftUI-macOS-MenuBar-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F7742E672A83423A00C81A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-macOS MenuBar App/TodoSwiftUI_macOS_MenuBar_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TodoSwiftUI-macOS MenuBar App/Preview Content\"";
+				DEVELOPMENT_TEAM = YUUW8QNH75;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.example.TodoSwiftUI-macOS-MenuBar-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1076,6 +1262,15 @@
 			buildConfigurations = (
 				F76C6A7C2A7AD37A006918D8 /* Debug */,
 				F76C6A7D2A7AD37A006918D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7742E682A83423A00C81A77 /* Build configuration list for PBXNativeTarget "TodoSwiftUI-macOS MenuBar App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7742E662A83423A00C81A77 /* Debug */,
+				F7742E672A83423A00C81A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
