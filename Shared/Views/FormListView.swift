@@ -48,10 +48,11 @@ struct FormListView: View {
                 Button(list == nil ? "Save" : "Update", action: save)
             }
         }
-        #if os(macOS)
-        .frame(width: 300)
-        .padding(30)
-        #endif
+//        #if os(macOS)
+//        .frame(width: 300)
+//        .padding(30)
+//        #endif
+        .formStyle(.grouped)
     }
 }
 

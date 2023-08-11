@@ -21,6 +21,7 @@ struct LoginForm: View {
                 }
             })
         }
+        .formStyle(.grouped)
     }
 }
 
