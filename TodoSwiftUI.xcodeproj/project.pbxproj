@@ -401,6 +401,7 @@
 				F7A014B82A85D78D00B3A6C5 /* Info.plist */,
 				F7A014C42A85E59800B3A6C5 /* TimelineProvider.swift */,
 				F7A014C62A85E62700B3A6C5 /* TimelineEntry.swift */,
+				F73DA2C42A87368000B777E1 /* TodoSwiftUI-iOS WidgetExtension.entitlements */,
 			);
 			path = "TodoSwiftUI-iOS Widget";
 			sourceTree = "<group>";
@@ -416,7 +417,6 @@
 		F7A326BD2A7A0E7A00060D9D = {
 			isa = PBXGroup;
 			children = (
-				F73DA2C42A87368000B777E1 /* TodoSwiftUI-iOS WidgetExtension.entitlements */,
 				F7E637732A7AD40700E01438 /* Shared */,
 				F7A326C82A7A0E7A00060D9D /* TodoSwiftUI-iOS */,
 				F7074F0E2A7AD16C0055B5A8 /* TodoSwiftUI-tvOS */,
@@ -1200,7 +1200,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-iOS WidgetExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-iOS Widget/TodoSwiftUI-iOS WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUUW8QNH75;
@@ -1230,7 +1230,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-iOS WidgetExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-iOS Widget/TodoSwiftUI-iOS WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUUW8QNH75;
