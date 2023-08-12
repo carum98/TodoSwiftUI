@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 class AuthViewModel: ObservableObject {
     private let name = "token"
-    private let defaults = UserDefaults.standard
+    private let defaults = UserDefaults(suiteName: "group.example.TodoSwiftUi")
     
     @Published var isAuth = false
     
@@ -21,7 +21,7 @@ class AuthViewModel: ObservableObject {
     }
     
     func getToken() -> String? {
-        guard let token = defaults.string(forKey: name) else {
+        guard let token = defaults?.string(forKey: name) else {
             return nil
         }
         
@@ -30,14 +30,14 @@ class AuthViewModel: ObservableObject {
     
     func setToken(token: String) {
         self.isAuth = true
-        defaults.setValue(token, forKey: name)
+        defaults?.setValue(token, forKey: name)
         
         print("log in")
     }
     
     func removeToken() {
         self.isAuth = false
-        defaults.removeObject(forKey: name)
+        defaults?.removeObject(forKey: name)
         
         print("removeToken")
         print(self.isAuth)

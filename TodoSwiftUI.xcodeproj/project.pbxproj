@@ -49,6 +49,13 @@
 		F7A014B52A85D78A00B3A6C5 /* TodoSwiftUI_iOS_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A014B42A85D78A00B3A6C5 /* TodoSwiftUI_iOS_Widget.swift */; };
 		F7A014B72A85D78D00B3A6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A014B62A85D78D00B3A6C5 /* Assets.xcassets */; };
 		F7A014BB2A85D78D00B3A6C5 /* TodoSwiftUI-iOS WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7A014A92A85D78A00B3A6C5 /* TodoSwiftUI-iOS WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7A014C32A85E35C00B3A6C5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A014C22A85E35C00B3A6C5 /* HomeView.swift */; };
+		F7A014C52A85E59800B3A6C5 /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A014C42A85E59800B3A6C5 /* TimelineProvider.swift */; };
+		F7A014C72A85E62700B3A6C5 /* TimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A014C62A85E62700B3A6C5 /* TimelineEntry.swift */; };
+		F7A014C82A85E75D00B3A6C5 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9282A7B59D2002FC15B /* ListModel.swift */; };
+		F7A014C92A85E8EB00B3A6C5 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
+		F7A014CB2A85EA9A00B3A6C5 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE90E2A7B1850002FC15B /* HttpService.swift */; };
+		F7A014CC2A85EAA700B3A6C5 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9192A7B4AA9002FC15B /* AuthViewModel.swift */; };
 		F7A326CA2A7A0E7A00060D9D /* TodoSwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A326C92A7A0E7A00060D9D /* TodoSwiftUiApp.swift */; };
 		F7A326CC2A7A0E7A00060D9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A326CB2A7A0E7A00060D9D /* ContentView.swift */; };
 		F7A326CE2A7A0E7C00060D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A326CD2A7A0E7C00060D9D /* Assets.xcassets */; };
@@ -181,6 +188,7 @@
 		F73D53522A7AD25500E6DD91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73D53552A7AD25500E6DD91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F73D53572A7AD25500E6DD91 /* TodoSwiftUI_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodoSwiftUI_macOS.entitlements; sourceTree = "<group>"; };
+		F73DA2C42A87368000B777E1 /* TodoSwiftUI-iOS WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TodoSwiftUI-iOS WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		F76C6A702A7AD378006918D8 /* TodoSwiftUI-watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoSwiftUI-watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76C6A722A7AD378006918D8 /* TodoSwiftUI_watchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUI_watchOSApp.swift; sourceTree = "<group>"; };
 		F76C6A742A7AD378006918D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +209,9 @@
 		F7A014B42A85D78A00B3A6C5 /* TodoSwiftUI_iOS_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUI_iOS_Widget.swift; sourceTree = "<group>"; };
 		F7A014B62A85D78D00B3A6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7A014B82A85D78D00B3A6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A014C22A85E35C00B3A6C5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F7A014C42A85E59800B3A6C5 /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
+		F7A014C62A85E62700B3A6C5 /* TimelineEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineEntry.swift; sourceTree = "<group>"; };
 		F7A326C62A7A0E7A00060D9D /* TodoSwiftUI-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TodoSwiftUI-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A326C92A7A0E7A00060D9D /* TodoSwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoSwiftUiApp.swift; sourceTree = "<group>"; };
 		F7A326CB2A7A0E7A00060D9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -382,18 +393,30 @@
 		F7A014AF2A85D78A00B3A6C5 /* TodoSwiftUI-iOS Widget */ = {
 			isa = PBXGroup;
 			children = (
+				F7A014C12A85E33900B3A6C5 /* Views */,
 				F7A014B02A85D78A00B3A6C5 /* TodoSwiftUI_iOS_WidgetBundle.swift */,
 				F7A014B22A85D78A00B3A6C5 /* TodoSwiftUI_iOS_WidgetLiveActivity.swift */,
 				F7A014B42A85D78A00B3A6C5 /* TodoSwiftUI_iOS_Widget.swift */,
 				F7A014B62A85D78D00B3A6C5 /* Assets.xcassets */,
 				F7A014B82A85D78D00B3A6C5 /* Info.plist */,
+				F7A014C42A85E59800B3A6C5 /* TimelineProvider.swift */,
+				F7A014C62A85E62700B3A6C5 /* TimelineEntry.swift */,
 			);
 			path = "TodoSwiftUI-iOS Widget";
+			sourceTree = "<group>";
+		};
+		F7A014C12A85E33900B3A6C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7A014C22A85E35C00B3A6C5 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F7A326BD2A7A0E7A00060D9D = {
 			isa = PBXGroup;
 			children = (
+				F73DA2C42A87368000B777E1 /* TodoSwiftUI-iOS WidgetExtension.entitlements */,
 				F7E637732A7AD40700E01438 /* Shared */,
 				F7A326C82A7A0E7A00060D9D /* TodoSwiftUI-iOS */,
 				F7074F0E2A7AD16C0055B5A8 /* TodoSwiftUI-tvOS */,
@@ -884,8 +907,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A014B32A85D78A00B3A6C5 /* TodoSwiftUI_iOS_WidgetLiveActivity.swift in Sources */,
+				F7A014C32A85E35C00B3A6C5 /* HomeView.swift in Sources */,
 				F7A014B12A85D78A00B3A6C5 /* TodoSwiftUI_iOS_WidgetBundle.swift in Sources */,
+				F7A014C92A85E8EB00B3A6C5 /* Color+Extensions.swift in Sources */,
+				F7A014C72A85E62700B3A6C5 /* TimelineEntry.swift in Sources */,
+				F7A014C82A85E75D00B3A6C5 /* ListModel.swift in Sources */,
+				F7A014CC2A85EAA700B3A6C5 /* AuthViewModel.swift in Sources */,
 				F7A014B52A85D78A00B3A6C5 /* TodoSwiftUI_iOS_Widget.swift in Sources */,
+				F7A014C52A85E59800B3A6C5 /* TimelineProvider.swift in Sources */,
+				F7A014CB2A85EA9A00B3A6C5 /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1170,6 +1200,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-iOS WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUUW8QNH75;
@@ -1199,6 +1230,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "TodoSwiftUI-iOS WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YUUW8QNH75;
