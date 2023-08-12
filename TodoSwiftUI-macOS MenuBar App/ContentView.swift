@@ -15,6 +15,7 @@ struct ContentView: View {
             HomeView()
         } else {
             LoginView()
+                .padding(20)
         }
     }
 }

@@ -1,13 +1,13 @@
 //
-//  LoginForm.swift
-//  TodoSwiftUI
+//  LoginView.swift
+//  TodoSwiftUI-watchOS Watch App
 //
-//  Created by Carlos Eduardo Umaña Acevedo on 2/8/23.
+//  Created by Carlos Eduardo Umaña Acevedo on 12/8/23.
 //
 
 import SwiftUI
 
-struct LoginForm: View {
+struct LoginView: View {
     @StateObject var vm = LoginViewModel()
     
     var body: some View {
@@ -15,18 +15,18 @@ struct LoginForm: View {
             TextField("Username", text: $vm.userName)
             SecureField("Password", text: $vm.password)
             
-            Button("Log In", action: {
+            Button("Login") {
                 Task {
                     await vm.login()
                 }
-            })
+            }
+            .disabled(vm.disabled)
         }
-        .formStyle(.grouped)
     }
 }
 
-struct LoginForm_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginForm()
+        LoginView()
     }
 }

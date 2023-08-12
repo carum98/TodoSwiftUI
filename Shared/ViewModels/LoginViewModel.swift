@@ -14,6 +14,10 @@ class LoginViewModel: ObservableObject {
     @Published var userName = ""
     @Published var password = ""
     
+    var disabled: Bool {
+         return userName.isEmpty || password.isEmpty
+    }
+    
     func login() async -> Bool {
         do {
             let data = try? JSONEncoder().encode(["user_name": userName, "password": password])
