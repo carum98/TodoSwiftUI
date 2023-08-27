@@ -28,7 +28,7 @@ class ListViewModel: ObservableObject {
             let data = try? JSONEncoder().encode(["name": name, "color": color.toHex()])
         
             let response: ListModel = try await httpService.fetch(url: "/lists", method: .POST(data: data))
-            self.items.append(response)
+            self.items.insert(response, at: 0)
         } catch {
             print(error)
         }
