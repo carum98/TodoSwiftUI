@@ -22,6 +22,8 @@ struct ListTile: View {
                 .frame(width: 20, height: 20)
                 .foregroundColor(Color(hex: list.color))
             Text(list.name)
+            Spacer()
+            Text("\(list.count)")
         }
         #if os(tvOS) || os(macOS)
         .contextMenu {

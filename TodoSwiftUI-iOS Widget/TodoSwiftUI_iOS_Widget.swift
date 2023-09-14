@@ -23,16 +23,16 @@ struct TodoSwiftUI_iOS_Widget: Widget {
 struct TodoSwiftUI_iOS_Widget_Previews: PreviewProvider {
     static var previews: some View {
         let lists = [
-            ListModel(id: 1, name: "Work", color: "#FF0000"),
-            ListModel(id: 2, name: "University", color: "#FFFF00"),
-            ListModel(id: 3, name: "Development", color: "#FF00FF"),
-            ListModel(id: 4, name: "Food", color: "#00F2F"),
-            ListModel(id: 5, name: "Tools", color: "#F02240"),
-            ListModel(id: 1, name: "Work", color: "#FF0000"),
-            ListModel(id: 2, name: "University", color: "#FFFF00"),
-            ListModel(id: 3, name: "Development", color: "#FF00FF"),
-            ListModel(id: 4, name: "Food", color: "#00F2F"),
-            ListModel(id: 5, name: "Tools", color: "#F02240"),
+            ListModel(id: 1, name: "Work", color: "#FF0000", count: 2),
+            ListModel(id: 2, name: "University", color: "#FFFF00", count: 2),
+            ListModel(id: 3, name: "Development", color: "#FF00FF", count: 0),
+            ListModel(id: 4, name: "Food", color: "#00F2F", count: 1),
+            ListModel(id: 5, name: "Tools", color: "#F02240", count: 4),
+            ListModel(id: 1, name: "Work", color: "#FF0000", count: 0),
+            ListModel(id: 2, name: "University", color: "#FFFF00", count: 1),
+            ListModel(id: 3, name: "Development", color: "#FF00FF", count: 1),
+            ListModel(id: 4, name: "Food", color: "#00F2F", count: 0),
+            ListModel(id: 5, name: "Tools", color: "#F02240", count: 3),
         ]
         
         HomeView(entry: SimpleEntry(date: Date(), lists: lists))
