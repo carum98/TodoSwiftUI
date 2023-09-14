@@ -23,7 +23,26 @@ struct ListTile: View {
                 .foregroundColor(Color(hex: list.color))
             Text(list.name)
             Spacer()
-            Text("\(list.count)")
+            #if os(tvOS)
+            ZStack {
+                Circle()
+                    .frame(width: 40, height: 40)
+                    .opacity(0.5)
+                
+                Text("\(list.count)")
+                    .foregroundColor(.white)
+            }
+            #else
+            ZStack {
+                Circle()
+                    .fill(.black)
+                    .frame(width: 20, height: 20)
+                
+                Text("\(list.count)")
+                    .font(.system(size: 13))
+            }
+            .opacity(0.5)
+            #endif
         }
         #if os(tvOS) || os(macOS)
         .contextMenu {
