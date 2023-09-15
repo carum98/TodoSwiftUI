@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var listViewModel = ListViewModel()
     
     var body: some View {
         NavigationStack {
@@ -18,6 +19,7 @@ struct HomeView: View {
                         .navigationTitle(item.name)
                 }
         }
+        .environmentObject(listViewModel)
     }
 }
 

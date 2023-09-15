@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TodoView: View {
+    @EnvironmentObject var listViewModel: ListViewModel
     @StateObject var vm = TodoViewModel()
     @State private var showingSheet = false
     
@@ -49,6 +50,7 @@ struct TodoView: View {
         }
         .task(id: list) {
             await vm.getData(id: list.id)
+            vm.setup(listViewModel: listViewModel, list: list)
         }
     }
 }

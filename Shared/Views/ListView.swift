@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListView: View {
-    @StateObject var vm = ListViewModel()
+    @EnvironmentObject var vm: ListViewModel
     @Binding var selected: ListModel?
     
     @State private var showingSheet = false
@@ -57,9 +57,6 @@ struct ListView: View {
             }
                 .presentationDetents([.medium])
                 .presentationDragIndicator(.visible)
-        }
-        .task {
-            await vm.getData()
         }
     }
 }

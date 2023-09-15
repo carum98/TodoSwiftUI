@@ -11,7 +11,15 @@ import Foundation
 class TodoViewModel: ObservableObject {
     let httpService = HttpService()
     
+    var listViewModel: ListViewModel?
+    var list: ListModel?
+    
     @Published var items: [TodoModel] = []
+    
+    func setup(listViewModel: ListViewModel, list: ListModel) {
+        self.listViewModel = listViewModel
+        self.list = list
+    }
     
     func getData(id: Int) async {
         do {
@@ -28,6 +36,8 @@ class TodoViewModel: ObservableObject {
             
             if let index = items.firstIndex(of: todo) {
                 items[index] = response
+                
+                listViewModel?.changeCount(id: list!.id, value: response.is_complete ? -1 : 1)
             }
         } catch {
             print(error)
@@ -49,6 +59,8 @@ class TodoViewModel: ObservableObject {
             let response: TodoModel = try await httpService.fetch(url: "/lists/\(list.id)/todos", method: .POST(data: data))
             
             self.items.append(response)
+            
+            listViewModel?.changeCount(id: list.id, value: 1)
         } catch {
             print(error)
         }

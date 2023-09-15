@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var listViewModel = ListViewModel()
     @State private var list: ListModel?
     
     var body: some View {
@@ -22,7 +23,9 @@ struct HomeView: View {
               Text("Select list")
                     .navigationTitle("Todo")
             }
-        }.navigationSplitViewStyle(.balanced)
+        }
+        .navigationSplitViewStyle(.balanced)
+        .environmentObject(listViewModel)
     }
 }
 

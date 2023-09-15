@@ -14,6 +14,12 @@ class ListViewModel: ObservableObject {
     
     @Published var items: [ListModel] = []
     
+    init() {
+        Task {
+            await self.getData()
+        }
+    }
+    
     func getData() async {
         do {
             let response: ListModelData = try await httpService.fetch(url: "/lists")
@@ -53,6 +59,13 @@ class ListViewModel: ObservableObject {
             let _: ListModel? = try await httpService.fetch(url: "/lists/\(id)", method: .DELETE)
         } catch {
             print(error)
+        }
+    }
+    
+    func changeCount(id: Int, value: Int) {
+        if let i = self.items.firstIndex(where: { $0.id == id }) {
+            let item = self.items[i]
+            self.items[i] = item.copyWith(name: nil, color: nil, count: item.count + value)
         }
     }
 }
