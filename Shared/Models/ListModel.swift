@@ -41,7 +41,7 @@ struct ListModel: Codable, Identifiable, Hashable {
     }
     
     static func preview() -> ListModel {
-        return ListModel(id: 1, name: "Work", color: "#FF0000", count: 1)
+        return ListModel(id: 1, name: "Work", color: "#f43b30", count: 1)
     }
     
     func copyWith(name: String?, color: String?, count: Int?) -> ListModel {

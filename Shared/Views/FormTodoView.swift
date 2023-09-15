@@ -47,11 +47,10 @@ struct FormTodoView: View {
                 Button(todo == nil ? "Save" : "Update", action: save)
             }
         }
-//        #if os(macOS)
-//        .frame(width: 300)
-//        .padding(30)
-//        #endif
-        .formStyle(.grouped)
+        #if os(macOS)
+        .frame(width: 300)
+        .padding(30)
+        #endif
     }
 }
 

@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+enum FocusedField {
+    case name, color
+}
+
 struct FormListView: View {
     let onSave: () -> Void
     
@@ -16,13 +20,15 @@ struct FormListView: View {
     @State var name: String
     @State var color: Color
     
+    @FocusState private var focusedField: FocusedField?
+    
     init(list: ListModel?, listViewModel: ListViewModel, onSave: @escaping () -> Void) {
         self.list = list
         self.listViewModel = listViewModel
         self.onSave = onSave
         
         _name = State(initialValue: list?.name ?? "")
-        _color = State(initialValue: list != nil ? Color(hex: list!.color) : Color.red)
+        _color = State(initialValue: list != nil ? Color(hex: list!.color) : Color(hex: "#f43b30"))
     }
     
     func save() {
@@ -41,18 +47,25 @@ struct FormListView: View {
         Form {
             Section {
                 TextField("Name", text: $name)
-                PickerColor(color: $color)
+                    .focused($focusedField, equals: .name)
+                HStack {
+                    Spacer()
+                    PickerColor(color: $color)
+                    Spacer()
+                }
             }
             
             Section {
                 Button(list == nil ? "Save" : "Update", action: save)
             }
         }
-//        #if os(macOS)
-//        .frame(width: 300)
-//        .padding(30)
-//        #endif
-        .formStyle(.grouped)
+        #if os(macOS)
+        .frame(width: 300)
+        .padding(30)
+        #endif
+        .onAppear {
+            focusedField = .name
+        }
     }
 }
 
