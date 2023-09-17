@@ -9,7 +9,7 @@ import Foundation
 
 struct HttpService {
     let authService = AuthViewModel.shared
-    let endPoint = "http://192.168.10.106:8080"
+    let endPoint = "http://localhost:3000"
     
     func fetch<T: Codable>(url: String, method: HttpServiceMethod = .GET) async throws -> T {
         guard let url = URL(string: "\(endPoint)\(url)") else {
