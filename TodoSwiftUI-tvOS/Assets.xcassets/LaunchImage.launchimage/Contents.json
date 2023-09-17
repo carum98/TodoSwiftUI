@@ -1,0 +1,24 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "images" : [
+    {
+      "scale" : "1x",
+      "extent" : "full-screen",
+      "filename" : "tvOSLaunchImage.png",
+      "orientation" : "landscape",
+      "minimum-system-version" : "9.0",
+      "idiom" : "tv"
+    },
+    {
+      "extent" : "full-screen",
+      "idiom" : "tv",
+      "scale" : "2x",
+      "filename" : "tvOSLaunchImage@2x.png",
+      "minimum-system-version" : "11.0",
+      "orientation" : "landscape"
+    }
+  ]
+}

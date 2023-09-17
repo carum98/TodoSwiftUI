@@ -8,10 +8,22 @@
       "filename" : "Front.imagestacklayer"
     },
     {
-      "filename" : "Middle.imagestacklayer"
+      "filename" : "Icon.imagestacklayer"
+    },
+    {
+      "filename" : "Background.imagestacklayer"
     },
     {
       "filename" : "Back.imagestacklayer"
+    },
+    {
+      "filename" : "Middle.imagestacklayer"
     }
-  ]
+  ],
+  "properties" : {
+    "canvasSize" : {
+      "height" : 768,
+      "width" : 1280
+    }
+  }
 }

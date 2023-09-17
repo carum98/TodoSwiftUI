@@ -46,6 +46,7 @@
 		F7742E7B2A8345D500C81A77 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9422A7C8FD8002FC15B /* TodoModel.swift */; };
 		F7742E7C2A8345D900C81A77 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE92E2A7B64AA002FC15B /* Color+Extensions.swift */; };
 		F7742E7D2A83462600C81A77 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE9232A7B5964002FC15B /* ListViewModel.swift */; };
+		F7941B592AB66F4B00E12D5E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7941B582AB66F4B00E12D5E /* Launch Screen.storyboard */; };
 		F7A014AC2A85D78A00B3A6C5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A014AB2A85D78A00B3A6C5 /* WidgetKit.framework */; };
 		F7A014AE2A85D78A00B3A6C5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A014AD2A85D78A00B3A6C5 /* SwiftUI.framework */; };
 		F7A014B12A85D78A00B3A6C5 /* TodoSwiftUI_iOS_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A014B02A85D78A00B3A6C5 /* TodoSwiftUI_iOS_WidgetBundle.swift */; };
@@ -200,6 +201,7 @@
 		F7742E632A83423A00C81A77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7742E652A83423A00C81A77 /* TodoSwiftUI_macOS_MenuBar_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodoSwiftUI_macOS_MenuBar_App.entitlements; sourceTree = "<group>"; };
 		F7742E702A83459000C81A77 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F7941B582AB66F4B00E12D5E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F7A014A92A85D78A00B3A6C5 /* TodoSwiftUI-iOS WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TodoSwiftUI-iOS WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A014AB2A85D78A00B3A6C5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F7A014AD2A85D78A00B3A6C5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -448,6 +450,7 @@
 				F7A326CD2A7A0E7C00060D9D /* Assets.xcassets */,
 				F7B0FC492A7ACADC00471DD5 /* TodoSwiftUI.entitlements */,
 				F7A326D02A7A0E7C00060D9D /* Preview Content */,
+				F7941B582AB66F4B00E12D5E /* Launch Screen.storyboard */,
 			);
 			path = "TodoSwiftUI-iOS";
 			sourceTree = "<group>";
@@ -778,6 +781,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7941B592AB66F4B00E12D5E /* Launch Screen.storyboard in Resources */,
 				F7A326D22A7A0E7C00060D9D /* Preview Assets.xcassets in Resources */,
 				F7A326CE2A7A0E7C00060D9D /* Assets.xcassets in Resources */,
 			);
@@ -1379,6 +1383,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1420,6 +1425,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
